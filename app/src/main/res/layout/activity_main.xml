@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99D3DF"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/converterFrame"
+        android:layout_width="345dp"
+        android:layout_height="287dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="#DEEAEA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="143.5dp"
+            android:background="@android:color/black" />
+
+        <Button
+            android:id="@+id/flipButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="145dp"
+            android:layout_marginTop="116dp"
+            android:background="@drawable/updownarrows"
+            android:onClick="swapCryptos"
+            android:shape="rectangle" />
+
+        <Spinner
+            android:id="@+id/currency1"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="36dp"
+            android:entries="@array/cryptoList" />
+
+        <ImageView
+            android:id="@+id/cryptoIcon1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="80dp"
+            app:srcCompat="@drawable/usd" />
+
+        <EditText
+            android:id="@+id/cryptoVal1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:text="@string/cryptoVal1"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            tools:text="@string/cryptoVal1" />
+
+        <Spinner
+            android:id="@+id/currency2"
+            android:layout_width="130dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="179.5dp"
+            android:entries="@array/cryptoList" />
+
+        <TextView
+            android:id="@+id/cryptoVal2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="184.5dp"
+            android:text="@string/cryptoVal2"
+            android:textAllCaps="true"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            tools:text="@string/cryptoVal2" />
+
+        <ImageView
+            android:id="@+id/cryptoIcon2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="220dp"
+            app:srcCompat="@drawable/btcz" />
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/refreshButton"
+        android:layout_width="72dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/refresh"
+        android:onClick="refreshRates"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/converterFrame" />
+
+
+
+</android.support.constraint.ConstraintLayout>
+

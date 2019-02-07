@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Greg\'s Cryptocurrency Converter</string>
+    <string name="cryptoValAutofill">Enter a Value</string>
+    <string name="cryptoVal1">1.00000</string>
+    <string name="cryptoVal2">0.00030</string>
+    <string-array name="cryptoList">
+        <item>USD</item>
+        <item>BTC</item>
+        <item>ETH</item>
+        <item>LTC</item>
+    </string-array>
+</resources>
